@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header id="header">
+            CSS Documentation
+        </header>
+        <ul>
+            <li>
+                <a href="#introduction" class="nav-link">Introduction</a>
+            </li>
+            <li>
+                <a href="#syntax" class="nav-link">Syntax</a>
+            </li>
+            <li>
+                <a href="#selectors" class="nav-link">Selectors</a>
+            </li>
+            <li>
+                <a href="#comments" class="nav-link">Comments</a>
+            </li>
+            <li>
+                <a href="#background" class="nav-link">Background</a>
+            </li>
+            <li>
+                <a href="#margins" class="nav-link">Margins</a>
+            </li>
+            <li>
+                <a href="#padding" class="nav-link">Padding</a>
+            </li>
+            <li>
+                <a href="#display" class="nav-link">Display</a>
+            </li>
+            <li>
+                <a href="#position" class="nav-link">Position</a>
+            </li>
+            <li>
+                <a href="#reference" class="nav-link">Reference</a>
+            </li>
+        </ul>
+    </nav>
+ <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header id="CSS_introduction">Introduction</header>
+            <p>CSS is the language we use to style a Web page
+                <br>
+                <ul class="header-text">
+                    <li class="text">CSS stands for Cascading Style Sheets.</li>
+                    <li class="text">CSS describes how HTML elemnts are to be displayed on screen,paper, or in other media.</li> 
+                    <li class="text">CSS saves a lot of work. It can control the layout of multiple web all at once.</li>
+                    <li class="text">External stylesheets are stored in CSS files.</li>
+                </ul>
+            </p>
+        </section>  
+        <hr>
+        <section class="main-section" id="syntax">
+            <header id="CSS_syntax">Syntax</header>
+            <p>A CSS rule consists of a selector and a declaration block
+                <br>
+                <ul class="header-text">
+                    <li class="text">The selector points to the HTML element you want to style.</li>
+                    <li class="text">Each declaration includes a CSS property name and a value, separated by a colon.</li> 
+                    <li class="text">The declaration block contains one or more declarations separated by semicolons.</li>
+                    <li class="text">Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</li>
+                </ul>
+            </p>
+            <code>
+                h1{
+                    color: blue;
+                    font-size: 12px;
+                    width: 100px;
+                }</code>
+                <ul>
+                    <li>This is an example of syntax.</li>
+                    <li>h1 is a selector in CSS (it points to the HTML element you want to style: h1).</li>
+                    <li>color is a property, and blue is the property value.</li> 
+                    <li>font-size is a property, and 12px is the property value.</li>
+                    <li>width is a property, and 100px is the property value.</li>   
+                    </ul>
+        </section>  
+        <hr>
+        <section class="main-section" id="selectors">
+            <header id="CSS_selectors">Selectors</header>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.
+                <br>
+                <ul class="header-text">
+                    <p>We can divide CSS selectors into five categories:</p>
+                    <li class="text">Simple selectors (select elements based on name, id, class).</li>
+                    <li class="text">Combinator selectors (select elements based on a specific relationship between them).</li> 
+                    <li class="text">Pseudo-elements selectors (select and style a part of an element).</li>
+                    <li class="text">Pseudo-class selectors (select elements based on a certain state).</li>
+                    <li class="text">Attribute selectors (select elements based on an attribute or attribute value).</li>
+                </ul>
+            </p>
+        </section>  
+        <hr>
+        <section class="main-section" id="comments">
+            <header id="CSS_comments">Comments</header>
+            <p>CSS comments are not displayed in the browser, but they can help document your source code. <br>Comments are used to explain the code, and may help when you edit the source code at a later date. <br> Comments are ignored by browsers. <br>A CSS comment is placed inside the style tags.</p>
+            <code>/* This would be considered a comment in CSS */</code>
+            <ul>
+                <li>Above ia an example of comment section in CSS.</li>
+            </ul>
+        </section>
+        <hr>  
+        <section class="main-section" id="background">
+            <header id="Css_background">Background</header>
+            <p>The CSS background properties are used to add background effects for elements. <br>CSS backgrounds can be for background-images, background-color, background-repeat, background-position. <br> There are multiple properties with the background. </p>
+            <code>background-color: #ffff; (white), background-repeat: no-repeat;
+            </code>
+            <p>We have several ways to style backgrounds in CSS.</p>
+        </section>
+        <hr>  
+        <section class="main-section" id="margins">
+            <header id="CSS_margins">Margins</header>
+            <p>The CSS margin properties are used to create space around elements, outside of any defined borders. <br> With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+        <ul class="header-text">
+            <p>All the margin properties can have the following values:</p>
+            <li class="text">auto: the browser calculates the margin.</li>
+            <li class="text">length: specifies a margin in px, pt, cm, etc.</li>
+            <li class="text">%:  specifies a margin in % of the width of the containing element.</li>
+            <li class="text">inherit: specifies that the margin should be inherited from the parent element.</li>
+            <li class="text">Negative values are allowed.</li>
+        </ul>
+        </section>  
+        <hr> 
+        <section class="main-section" id="padding">
+            <header id="CSS_padding">Padding</header>
+            <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+                <br>
+                With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+            </p>
+            <ul class="header-text">
+                <p>All the padding properties can have the following values:</p>
+                <li class="text">auto: the browser calculates the padding.</li>
+                <li class="text">length: specifies a padding in px, pt, cm, etc.</li>
+                <li class="text">%:  specifies a padding in % of the width of the containing element.</li>
+                <li class="text">inherit: specifies that the padding should be inherited from the parent element.</li>
+                <li class="text">Negative values are not allowed.</li>
+            </ul>
+        </section>  
+        <hr> 
+        <section class="main-section" id="display">
+            <header id="CSS_display">Display</header>
+            <p>The display property is the most important CSS property for controlling layout. <br> The display property specifies if/how an element is displayed. <br> 
+                Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
+            </p>
+            <h4>Block-level Elements</h4>
+            <p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+                <ul class="header-text">
+                    <code>Examples of block-level elements: </code>
+                    <li>< div></li>
+                    <li>< h1> - < h6></li>                
+                    <li>< p></li>
+                    <li>< form></li>
+                    <li>< header></li>
+                    <li>< footer></li>
+                    <li>< section></li>
+                </ul>
+                <p>Inline Elements.
+                    <br> 
+                    An inline element does not start on a new line and only takes up as much width as necessary.
+                </p>
+                <ul class="header-text">
+                    <code>Examples of inline elements:</code>
+                    <li>< span</li>
+                    <li>< a></li>
+                    <li>< img></li>
+                </ul>
+        </section>  
+        <hr> 
+        <section class="main-section" id="position">
+            <header id="CSS_position">Position</header>
+            <p>The position property specifies the type of positioning method used for an element.
+                <ul class="header-text">
+                    <p>There are five different position values:</p>
+                    <li>static</li>
+                    <li>relative</li>
+                    <li>fixed</li>
+                    <li>absolute</li>
+                    <li>sticky</li>
+                    <p>Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.</p>
+                </ul>
+            </p>
+        </section>  
+        <hr> <section class="main-section" id="reference">
+            <header id="CSS_reference">Reference</header>
+            <p>You can get more information by clicking the sites below.</p>
+            <a href="https://www.w3schools.com/css/default.asp" id="w3school">w3schools</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" id="mozilla" >developer.mozilla</a>
+        </section>  
+        <hr>
+    </main>                                                        
+</body>
+</html>
