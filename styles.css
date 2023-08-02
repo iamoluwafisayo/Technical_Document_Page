@@ -1,5 +1,9 @@
 body{
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
 }
 #navbar{
     width: 25%; /* width changed from 200% to 20%*/
@@ -45,6 +49,14 @@ header{
     margin-bottom: 100px;
     padding-left: 50px;
 }
+nav {
+  height: 100vh;
+  overflow-y: auto;
+}
+nav {
+    min-width: 250px;
+    display: fixed;
+  }
 section p {
     /* color: #4d4e53; */
     font-size: 1em;
@@ -99,35 +111,14 @@ code {
         margin-left: 12px;
     }
 }
-  /* For Tablets (768px to 991px width) */
-@media (min-width: 768px) and (max-width: 991px) {
-    #navbar{
-        width: 30%;
-    }
-    #navbar ul{
-        overflow: scroll;
-    }
-    header{
-        font-size: 20px; /* font-size changed from 3em to 20px*/
-    }
-    #navbar a, section h4{
-        font-size: 20px; /* font-size changed from 3em to 15px*/
-        padding: 10px 20px;
-    }
-    #main-doc {
-        left: 10%;
-        margin-left: 40px;
-    }
-    section p {
-        /* font-size: 12px; */
-        /* margin: 15px; */
-    }
-    section li {
-        /* margin: 15px 8px; */
-        /* font-size: 12px; */
-    }
-    section a {
-        /* font-size: 12px; */
-        /* margin-left: 12px; */
-    }
+
+@media only screen and (max-width: 400px) {
+  body {
+    flex-direction: column;
+  }
+  nav,
+  main {
+    height: auto;
+    width: 100%;
+  }
 }
